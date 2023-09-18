@@ -1,0 +1,48 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/user/6508399f6b92774bce846a78
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Udin",
+    "email" : "udin@example.com",
+    "gender" : "Laki-laki"
+}
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Sandy Kalam",
+    "email" : "sandy@example.com",
+    "gender" : "Laki-laki"
+}
+###
+GET  http://localhost:5000/user/650868536b92774bce846ab4
+
+###
+PATCH http://localhost:5000/users/650868536b92774bce846ab4
+Content-Type: application/json
+
+{
+    "name" : "Kalam Udin",
+    "email" : "udinas@example.com",
+    "gender" : "Laki-laki"
+}
+###
+
+PATCH http://localhost:3000/edit/6508399f6b92774bce846a78
+Content-Type: application/json
+
+{
+    "name" : "Wahyi",
+    "email" : "wahyu@example.com",
+    "gender" : "Laki-laki"
+}
+
+###
+GET http://localhost:3000/edit/6508399f6b92774bce846a78
